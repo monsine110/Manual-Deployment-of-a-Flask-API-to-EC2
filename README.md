@@ -1,5 +1,17 @@
 # Manual-Deployment-of-a-Flask-API-to-EC2
-You're deploying a Flask API manually to an Ubuntu-based EC2 instance—awesome! Here's a **complete, beginner-friendly guide** to get your app running and accessible via `/status` on port 5000.
+Objective:
+
+Deploy a simple Flask API to an Amazon EC2 instance. After deployment, accessing /status on the EC2 public IP should return a JSON message confirming the deployment was successful.
+________________________________________
+-	The backend api is here: [github](https://github.com/royalteegee/newlife-practice.git)
+-	After deployment, check http://<EC2_PUBLIC_IP>:5000/status, it should display the JSON success message: { "message": "deployment is SUCCESSFUL" }
+________________________________________
+Notes
+•	Assume the EC2 instance is running Ubuntu.
+•	Ensure that port 5000 is open in the EC2 security group.
+•	The Flask app should not stop running after the SSH session ends.
+
+
 
 ---
 
